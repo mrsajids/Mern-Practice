@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Home from "./component/Home";
+import Contact from "./component/Contact";
+import { useState } from "react";
+import React from "react";
+import Parent from "./fetch/Parent";
 
 function App() {
+  // let flag=true;
+  const [name,setName]=useState("");
+  let stylevar={backgroundColor:"pink",color:"green"}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* {
+      (flag)?<h1 style={stylevar}>logined succefully</h1>:<h1>please login</h1>
+      } */}
+       <Parent/>
+    </>
   );
 }
 
