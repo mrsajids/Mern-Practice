@@ -7,9 +7,11 @@ const useFetch = (url) => {
         error: null
     });
 
-    useMemo(() => {
-        fetchData()
-    }, [])
+    // useMemo(() => {
+    //     fetchData()
+    // }, [url])
+
+    useEffect(()=>fetchData(),[url])
 
     function fetchData() {
         console.log('usefetch..');
