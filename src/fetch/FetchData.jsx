@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 const useFetch = (url) => {
     const [state, setState] = useState({
@@ -46,7 +46,7 @@ const useFetch = (url) => {
             })
     }
 
-  return state
+    return state
 }
 
 export default useFetch
