@@ -11,8 +11,10 @@ function SmallExample() {
         { id: 5, fn: "John", ln: "Henry", un: 'dfjkdff' },
 
     ]
+    let str=['dad','rad','cad','merry','jerry']
+    let no=[19,34,5,23,25]
     function onSort() {
-
+      console.log(no.sort((a,b)=>b-a)); 
     }
     return (
         <Container className='mt-5'>
@@ -20,7 +22,7 @@ function SmallExample() {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th onClick={() => onloadstart()}>First Name</th>
+                        <th onClick={() => onSort()}>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
                     </tr>
