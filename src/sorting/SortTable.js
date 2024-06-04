@@ -27,7 +27,7 @@ function SmallExample() {
         }));
 
         // sorting array non english strings use localcompare
-        
+         
     }
     return (
         <Container className='mt-5'>
