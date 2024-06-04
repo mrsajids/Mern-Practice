@@ -11,10 +11,11 @@ function SmallExample() {
         { id: 5, fn: "John", ln: "Henry", un: 'dfjkdff' },
 
     ]
-    let str=['dad','rad','cad','merry','jerry']
-    let no=[19,34,5,23,25]
+    let str = ['dad', 'rad', 'cad', 'merry', 'jerry']
+    let no = [19, 34, 5,25, 23, 25]
     function onSort() {
-      console.log(no.sort((a,b)=>b-a)); 
+        //sorting an array
+        console.log(no.sort((a, b) => b - a));
     }
     return (
         <Container className='mt-5'>
