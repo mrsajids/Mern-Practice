@@ -7,6 +7,8 @@ import Parent from "./fetch/Parent";
 import CardandCarousal from "./carousal/CardandCarousal"
 import LeftNavbar from "./Navbar/LeftNavbar";
 import SortTable from "./sorting/SortTable"
+import CardsDesigns from "./Cards/CardsDesigns";
+import SystemStatusCard from "./Cards/SystemStatusCard";
 function App() {
   // let flag=true;
   const [name,setName]=useState("");
@@ -17,7 +19,15 @@ function App() {
       (flag)?<h1 style={stylevar}>logined succefully</h1>:<h1>please login</h1>
       } */}
       <LeftNavbar/>
-      <SortTable/>
+      {/* <SortTable/> */}
+      <div className="App" style={{ padding: '20px' }}>
+      <SystemStatusCard
+        ram={70} // Example percentage values
+        processor={55}
+        processes={40}
+        services={65}
+      />
+    </div>
     </>
   );
 }
